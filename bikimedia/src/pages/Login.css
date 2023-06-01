@@ -1,97 +1,117 @@
 /* Body background */
 body {
-    background-color: #0a0c17;
-    background-image: url('../utils/cyberpunk-bg.jpg');
-    background-size: cover;
-    color: #fff;
-    font-family: "Courier New", monospace;
-  }
-  
-  /* Login container */
+  background-color: #0a0c17;
+  background-image: url('../utils/cyberpunk-bg.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-family: "Courier New", monospace;
+}
+
+/* Login container */
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #1d79ff;
+  border-radius: 5px;
+}
+
+/* Main header */
+.main-header {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1d79ff;
+}
+
+/* Login header */
+.login-header {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1d79ff;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label */
+label {
+  font-weight: bold;
+  color: #1d79ff;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+}
+
+/* Submit button */
+.submit-button {
+  background-color: #ff00ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.submit-button:hover {
+  background-color: #ff00ff;
+  filter: brightness(1.2);
+}
+
+/* Toggle mode */
+.toggle-mode {
+  text-align: center;
+}
+
+.toggle-mode button {
+  font-size: large;
+  background: none;
+  border: none;
+  color: #f0f0f0;
+  cursor: pointer;
+  text-decoration: underline;
+  font-family: "Courier New", monospace;
+}
+
+.toggle-mode button:hover {
+  color: #4f03ff;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 768px) {
+  /* Modify styles for screens smaller than 768px */
   .login-container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 40px;
-    background-color: rgba(0, 0, 0, 0.8);
-    border: 1px solid #1d79ff;
-    border-radius: 5px;
+    max-width: 100%;
+    padding: 20px;
   }
-  /* Main header */
+  
   .main-header {
-    font-size: 32px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #1d79ff;
-  }
-  
-  /* Login header */
-  .login-header {
     font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #1d79ff;
   }
   
-  /* Form group */
-  .form-group {
-    margin-bottom: 20px;
+  .login-header {
+    font-size: 20px;
   }
-  
-  /* Label */
-  label {
-    font-weight: bold;
-    color: #1d79ff;
-  }
-  
-  /* Input fields */
-  input[type="text"],
-  input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-family: "Courier New", monospace;
-    font-size: 16px;
-  }
-  
-  /* Submit button */
-  .submit-button {
-    background-color: #ff00ff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: "Courier New", monospace;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .submit-button:hover {
-    background-color: #ff00ff;
-    filter: brightness(1.2);
-  }
-  
-  /* Toggle mode */
-  .toggle-mode {
-    text-align: center;
-  }
-  
-  .toggle-mode button {
-    font-size: large;
-    background: none;
-    border: none;
-    color: #f0f0f0;
-    cursor: pointer;
-    text-decoration: underline;
-    font-family: "Courier New", monospace;
-  }
-  
-  .toggle-mode button:hover {
-    color: #4f03ff;
-  }
-  
+}
